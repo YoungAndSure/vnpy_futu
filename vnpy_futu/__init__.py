@@ -20,12 +20,12 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-import importlib_metadata
+import importlib.metadata
 
 from .futu_gateway import FutuGateway
 
 
 try:
-    __version__ = importlib_metadata.version("vnpy_futu")
-except importlib_metadata.PackageNotFoundError:
+    __version__ = importlib.metadata.version("vnpy_futu")
+except importlib.metadata.PackageNotFoundError:
     __version__ = "dev"
